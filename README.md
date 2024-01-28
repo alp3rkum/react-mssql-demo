@@ -1,2 +1,2 @@
 # react-mssql-demo
-A simple demo of ReactJS-MSSQL integration
+A simple ReactJS-MSSQL integration demo that makes use of MSNodeSQLV8, Syncfusion EJ2-React and Express frameworks.
