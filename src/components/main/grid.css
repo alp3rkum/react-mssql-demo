@@ -1,0 +1,83 @@
+/* The dedicated stylesheet for the Datagrid that is used in the project */
+
+.e-hide{
+    display: none;
+} /* To hide the default caption */
+
+/*Header*/
+
+h4{
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.e-grid{
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.e-gridheader{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: rgb(192,208,224);
+}
+
+.e-gridheader .e-table colgroup > *:not(:last-child) {
+    width: 20vw;
+    border-right: 1px solid rgb(160, 176, 192);
+    border-bottom: 1px solid rgb(160, 176, 192);
+}
+
+.e-gridheader .e-table colgroup > *:last-child { /*To not draw the border at its right to not affect the top right border of the table header*/
+    width: 20vw;
+    border-bottom: 1px solid rgb(160, 176, 192);
+}
+
+
+.e-gridheader .e-table thead > tr > th {
+    padding: 5px;
+}
+
+.e-gridcontent{
+    background-color: rgb(224,232,240);
+}
+
+.e-gridcontent .e-table colgroup > * {
+    width: 20vw;
+}
+
+.e-gridcontent .e-table tbody > tr > td {
+    border-right: 1px solid rgb(208,216,224);
+    border-bottom: 1px solid rgb(200,208,216);
+    padding: 5px;
+}
+
+.button-div{
+    height: 36px;
+}
+
+.e-btn{
+    height: 36px;
+    background-color: transparent;
+    border: none;
+    color: rgb(32,64,128);
+    font-size: 24px;
+    transition: color 0.25s, font-size 0.25s;
+}
+
+.e-btn:not(:disabled):hover{
+    color: rgb(64,96,192);
+    font-size: 30px;
+    height: 36px;
+}
+
+.e-btn:not(:disabled):active{
+    color: rgb(96,160,255);
+    font-size: 32px;
+    height: 36px;
+}
+
+.e-btn:disabled{
+    color: rgba(32,64,128,0.5);
+}

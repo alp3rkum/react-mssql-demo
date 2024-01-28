@@ -1,0 +1,128 @@
+/* The index.css of the app, where the main styling of compnents lie */
+
+/* Page */
+
+html, body {
+  background-image: url('./graphics/light-background.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header */
+#header{
+  background-image: linear-gradient(to right, rgb(32,64,128), rgb(208,224,240));
+  color: white;
+  padding-left: 10px;
+  padding-bottom: 2px;
+}
+
+#sub-header{
+  background-image: linear-gradient(to right, rgb(32,64,128), rgb(208,224,240));
+  color: white;
+  padding-left: 10px;
+  padding-bottom: 1px;
+}
+
+/*Login Screen*/
+
+.login-div{
+  border-radius: 16px;
+  background-color: rgb(226,230,237);
+  width: 300px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-div > * {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.login-div .text-center{
+  padding-top: 5px;
+}
+
+.login-div  hr {
+  color: rgba(64,64,64,0.4);
+}
+
+.login-div button.btn{
+  background-color: inherit;
+  color: black;
+  transition-property: color;
+  transition-duration: 0.25s;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.login-div button.btn:hover{
+  color: gray;
+}
+
+.login-div button.btn:active{
+  color: white;
+}
+
+.form-group .form-control{
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  margin-bottom: 15px;
+}
+
+.form-group .form-control:hover{
+  background-color: rgba(255,255,255,0.75);
+}
+
+.form-group .form-control:focus{
+  background-color: rgba(255,255,255,1);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.sort-div{
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 40px;
+  align-items: center;
+}
+
+/* Landing */
+
+.landing-div{
+  min-height: 700px; /*Makes sure the position of footer doesn't alter when there are less than 10 datas on the screen*/
+}
+
+/* Footer */
+
+.div-footer {
+  vertical-align: baseline;
+  padding-top: 12.5px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.credit {
+  align-self: flex-start;
+}
+
+.credit-p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.powered-by {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.powered-by img{
+  margin-left: 15px;
+}
